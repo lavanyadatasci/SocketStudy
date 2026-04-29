@@ -85,21 +85,6 @@ conn.send(message.encode())
 # Close connection
 conn.close()
 server_socket.close()
-2.client:
-2. Client Program (client.py)
-import socket
-
-# Create socket
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Connect to server
-host = '127.0.0.1'
-port = 12345
-client_socket.connect((host, port))
-
-# Send message to server
-message = "Hello Server!"
-client_socket.send(message.encode())
 
 # Receive response from server
 data = client_socket.recv(1024).decode()
@@ -109,7 +94,6 @@ print("Server says:", data)
 client_socket.close()
 ##Output
 <img width="1600" height="183" alt="Screenshot 2026-04-29 104932" src="https://github.com/user-attachments/assets/bb892f92-16b0-4880-9458-5f8985c3eb2b" />
-<img width="1705" height="305" alt="Screenshot 2026-04-29 105226" src="https://github.com/user-attachments/assets/53052ee6-00a8-4e71-8b04-d279610e637d" />
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
